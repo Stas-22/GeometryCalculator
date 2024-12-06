@@ -18,10 +18,13 @@ public class MainActivity extends AppCompatActivity {
         EditText squareSideInput = findViewById(R.id.squareSideInput);
         EditText rectangleLengthInput = findViewById(R.id.rectangleLengthInput);
         EditText rectangleWidthInput = findViewById(R.id.rectangleWidthInput);
+        EditText triangleBaseInput = findViewById(R.id.triangleBaseInput);
+        EditText triangleHeightInput = findViewById(R.id.triangleHeightInput);
         TextView resultView = findViewById(R.id.resultView);
         Button calculateCircleButton = findViewById(R.id.calculateCircleButton);
         Button calculateSquareButton = findViewById(R.id.calculateSquareButton);
         Button calculateRectangleButton = findViewById(R.id.calculateRectangleButton);
+        Button calculateTriangleButton = findViewById(R.id.calculateTriangleButton);
 
         calculateCircleButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +65,22 @@ public class MainActivity extends AppCompatActivity {
                     resultView.setText(String.format("Rectangle Area: %.2f", area));
                 } else {
                     resultView.setText("Please enter both length and width.");
+                }
+            }
+        });
+
+        calculateTriangleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String baseText = triangleBaseInput.getText().toString();
+                String heightText = triangleHeightInput.getText().toString();
+                if (!baseText.isEmpty() && !heightText.isEmpty()) {
+                    double base = Double.parseDouble(baseText);
+                    double height = Double.parseDouble(heightText);
+                    double area = TriangleAreaCalculator.calculateArea(base, height);
+                    resultView.setText(String.format("Triangle Area: %.2f", area));
+                } else {
+                    resultView.setText("Please enter both base and height.");
                 }
             }
         });

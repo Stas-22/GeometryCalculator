@@ -58,6 +58,33 @@
         android:layout_marginBottom="16dp" />
 
 
+
+    <EditText
+        android:id="@+id/triangleBaseInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter triangle base"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/triangleHeightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter triangle height"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/calculateTriangleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Triangle Area"
+        android:layout_marginBottom="16dp" />
+
+
     <TextView
         android:id="@+id/resultView"
         android:layout_width="match_parent"
