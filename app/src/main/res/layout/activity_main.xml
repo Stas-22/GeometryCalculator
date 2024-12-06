@@ -3,15 +3,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/welcomeText"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/radiusInput"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to Geometry Calculator!"
-        android:textSize="20sp"
-        android:padding="16dp" />
+        android:hint="Enter radius"
+        android:inputType="numberDecimal" />
 
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Area" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will be shown here"
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
 </LinearLayout>
