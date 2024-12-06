@@ -34,6 +34,29 @@
         android:text="Calculate Square Area"
         android:layout_marginBottom="16dp" />
 
+    <EditText
+        android:id="@+id/rectangleLengthInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter rectangle length"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/rectangleWidthInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter rectangle width"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/calculateRectangleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Rectangle Area"
+        android:layout_marginBottom="16dp" />
+
 
     <TextView
         android:id="@+id/resultView"
