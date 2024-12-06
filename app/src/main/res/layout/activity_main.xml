@@ -13,7 +13,7 @@
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/calculateButton"
+        android:id="@+id/calculateCircleButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate Area" />

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button calculateSquareButton = findViewById(R.id.calculateSquareButton);
         Button calculateRectangleButton = findViewById(R.id.calculateRectangleButton);
 
-        calculateButton.setOnClickListener(new View.OnClickListener() {
+        calculateCircleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String radiusText = radiusInput.getText().toString();
