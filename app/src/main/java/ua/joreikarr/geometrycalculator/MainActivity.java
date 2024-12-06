@@ -31,5 +31,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        calculateSquareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sideText = squareSideInput.getText().toString();
+                if (!sideText.isEmpty()) {
+                    double sideLength = Double.parseDouble(sideText);
+                    double area = SquareAreaCalculator.calculateArea(sideLength);
+                    resultView.setText(String.format("Square Area: %.2f", area));
+                } else {
+                    resultView.setText("Please enter a side length.");
+                }
+            }
+        });
     }
 }

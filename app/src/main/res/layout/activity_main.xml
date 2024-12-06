@@ -18,6 +18,23 @@
         android:layout_height="wrap_content"
         android:text="Calculate Area" />
 
+
+    <EditText
+        android:id="@+id/squareSideInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter square side length"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/calculateSquareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Square Area"
+        android:layout_marginBottom="16dp" />
+
+
     <TextView
         android:id="@+id/resultView"
         android:layout_width="match_parent"
